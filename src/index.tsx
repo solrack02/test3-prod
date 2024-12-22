@@ -135,6 +135,26 @@ stls.height({ pass: { arrayValue: [jsvals.varReader({pass: {
           pressableFunctions: [()=>console.log("Você Clicou!")],
 
           args,
+        }}/>, 
+        (...args:any) => <Elements.Pressable3 pass={{
+          elementProperties: [{}],
+
+          styles: [
+              {
+                backgroundColor: 'blue',
+                borderRadius: 20,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }
+              ],
+
+          childrenItems: [()=><></>],
+
+          pressableFunctions: [()=>console.log("Você Clicou!")],
+
+          args,
         }}/>, (...args:any) => <Elements.Pressable3 pass={{
           elementProperties: [{}],
 
