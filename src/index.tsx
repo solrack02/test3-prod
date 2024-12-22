@@ -140,37 +140,23 @@ stls.height({ pass: { arrayValue: [jsvals.varReader({pass: {
         }})],
 
           args,
-        }}/>, 
+        }}/>, (...args:any) => <Elements.Pressable3 pass={{
+          elementProperties: [{}],
 
-        (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"home",
-
-          styles:[
+          styles: [
               {
-                backgroundColor: '#101',
+                backgroundColor: 'blue',
+                borderRadius: 20,
+                paddingVertical: 5,
+                paddingHorizontal: 20,
                 justifyContent: 'center',
                 alignItems: 'center',
-                height: '100%',
-                width: '100%',
               }
               ],
 
-          screenElements:[() => {
-                  const textStyle = {
-                    fontSize: 20,
-                    color: '#fff2',
-                    textAlign:'center',
-                    maxWidth: 200,
-                    // maxWidth: '200px'<= #ATTENTION: Native ERROR! No string!
-                  };
+          childrenItems: [()=><></>],
 
-                  return (
-                    <RN.Text style={textStyle}>
-                      {'Adicione Elementos nessa tela!'}
-                    </RN.Text>);
-                }],
-
-          startFunctions:[()=>{}],
+          pressableFunctions: [()=>console.log("Você Clicou!")],
 
           args,
         }}/>],
