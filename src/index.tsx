@@ -80,8 +80,7 @@ stls.height({ pass: { arrayValue: [jsvals.varReader({pass: {
         ],
 
           args,
-        }}/>, 
-        (...args:any) => <Elements.Pressable3 pass={{
+        }}/>, (...args:any) => <Elements.Pressable3 pass={{
           elementProperties: [{}],
 
           styles: [
@@ -138,44 +137,6 @@ stls.height({ pass: { arrayValue: [jsvals.varReader({pass: {
         }})],
             arrFuncs: [() => {}],
         }})],
-
-          args,
-        }}/>, 
-        
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[
-              {
-                height: "50px",
-                width: "80px",
-                backgroundColor: "#FDFDFD",
-                borderWidth: 2,
-                borderColor: "#EEE"
-              }
-              ],
-
-      URIvariablePath:["https://images.unsplash.com/photo-1488831861984-179da3647265?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-
-      args,
-    }}/>, (...args:any) => <Elements.Pressable3 pass={{
-          elementProperties: [{}],
-
-          styles: [
-              {
-                backgroundColor: 'blue',
-                borderRadius: 20,
-                paddingVertical: 5,
-                paddingHorizontal: 20,
-                justifyContent: 'center',
-                alignItems: 'center',
-              }
-              ],
-
-          childrenItems: [()=><></>],
-
-          pressableFunctions: [()=>console.log("Você Clicou!")],
 
           args,
         }}/>],
